@@ -1,0 +1,14 @@
+:root {
+  --primary-color: rgb(130, 226, 40);
+  --primary-color-active: rgb(130, 197, 40);
+  --input-bg-color: rgb(211, 211, 211);
+  --primary-border-radius: 10px;
+}
+
+#root {
+  margin: 0;
+  padding: 1em;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}

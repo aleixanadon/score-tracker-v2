@@ -1,0 +1,45 @@
+@import '../../../../App.css';
+
+:root {
+  --input-size: 4em;
+}
+
+.add-player-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.add-player-input {
+  padding: 0 1.5em;
+  height: var(--input-size);
+  flex: 1;
+  border: none;
+  background-color: var(--input-bg-color);
+  border-radius: var(--primary-border-radius);
+}
+
+.add-player-input:focus {
+  outline: 2px solid black;
+}
+
+.add-player-button {
+  width: var(--input-size);
+  height: var(--input-size);
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: var(--primary-border-radius);
+}
+
+.add-player-button:active {
+  background-color: var(--primary-color-active);
+  outline: 2px solid black;
+}
+
+.add-player-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}

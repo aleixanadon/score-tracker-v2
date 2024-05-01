@@ -1,0 +1,96 @@
+@import '../../../../App.css';
+
+:root {
+  --button-size: 3.5em;
+}
+
+.score-item {
+  margin: 0;
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.buttons-div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.score-buttons-div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.plus-button,
+.minus-button  {
+  border: none;
+  border-radius: var(--primary-border-radius);
+  width: var(--button-size);
+  height: var(--button-size);
+}
+
+.plus-button:active,
+.minus-button:active {
+  outline: 2px solid black;
+}
+
+.plus-button > span,
+.minus-button > span {
+  font-size: 2.5em;
+}
+
+.plus-button {
+  background-color: var(--primary-color);
+}
+
+.minus-button {
+  background-color: rgb(255, 52, 52);
+}
+
+.three-dots-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown {background-color: #ddd;}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  height: 3em;
+  font-size: medium;
+  border: none;
+}
