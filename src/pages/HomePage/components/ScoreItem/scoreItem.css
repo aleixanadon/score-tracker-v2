@@ -46,7 +46,7 @@
 }
 
 .minus-button {
-  background-color: rgb(255, 52, 52);
+  background-color: var(--danger-color);
 }
 
 .three-dots-button {
@@ -88,9 +88,20 @@
 .dropdown-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 1em; 
   gap: 1em;
   height: 3em;
   font-size: medium;
   border: none;
+}
+
+.close-dropdown-button {
+  background-color: transparent;
+}
+.edit-dropdown-button {
+  background-color: var(--warning-color);
+}
+.delete-dropdown-button {
+  background-color: var(--danger-color);
 }
